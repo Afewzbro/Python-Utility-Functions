@@ -1,0 +1,27 @@
+# Auto Clicker using PyAutoGUI
+This is a Python script for an auto-clicker using the PyAutoGUI library. It simulates mouse clicks after a certain time interval.
+
+## Installation
+First, make sure you have PyAutoGUI installed. You can do this by running the following command in your terminal:
+
+
+pip install pyautogui
+
+## Usage
+Import PyAutoGUI library:
+
+import pyautogui
+In an infinite loop, use pyautogui.sleep() function to pause the execution for a specified time interval. In the below code, the script sleeps for 40 seconds:
+
+while True:
+    pyautogui.sleep(40)
+Use pyautogui.click(x, y) function to simulate the mouse click at the specified (x, y) co-ordinates. In the below code, the script clicks on the co-ordinates (50, 400) after every 40 seconds:
+
+
+while True:
+    pyautogui.sleep(40)
+    pyautogui.click(50, 400)
+Note: Be careful when running this script, as it may accidentally click on unwanted areas of your screen.
+
+## Conclusion
+This is a simple implementation of an auto-clicker using the PyAutoGUI library. It can be further modified to suit specific use cases.

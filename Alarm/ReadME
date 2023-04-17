@@ -1,0 +1,31 @@
+# Alarm Clock
+This is a simple alarm clock program that allows you to set a time and date for an alarm. You can choose to have the alarm play a music file or sound a beep.
+
+## Getting Started
+### Prerequisites
+To run this program, you will need:
+
+Python 3.x
+playsound library (can be installed using pip)
+winsound library (only available on Windows machines)
+### Installing
+Clone this repository to your local machine.
+Install the necessary libraries using pip:
+
+pip install playsound
+
+(Note: winsound is only available on Windows machines and is already included in Python's standard library)
+## Usage
+Run the program by executing the following command in your terminal or command prompt:
+Copy code
+python alarm.py
+Input the date and time you want the alarm to go off.
+Choose between a music file or a beep sound.
+If you chose a beep sound, enter the duration in seconds and frequency of the noise.
+The program will display a message "setting alarm..." to let you know that the alarm has been set.
+When the alarm goes off, the program will play the chosen sound and display a message "Time's up!"
+## Contributing
+Feel free to contribute to this project by forking the repository and making pull requests. Any improvements or bug fixes are greatly appreciated!
+
+## Authors
+Testi Abdulwasi

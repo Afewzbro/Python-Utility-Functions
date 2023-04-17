@@ -1,0 +1,12 @@
+# Text-to-Speech with Pyttsx3
+This code demonstrates how to use the pyttsx3 library to convert text into speech.
+
+## Prerequisites
+In order to run this code, you will need to install the pyttsx3 library. You can do this by running the following command in your terminal:
+
+pip install pyttsx3
+## Usage
+Save the text you want to convert to speech as a text file (e.g., book.txt).
+Update the code to specify the correct path to the text file (e.g., book = open(r"book.txt")).
+## Run the code.
+The text will be read aloud using the default system voice. You can modify the voice used and other parameters by changing the arguments passed to pyttsx3.init().

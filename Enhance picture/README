@@ -1,0 +1,52 @@
+# Image Enhancement using Python Pillow
+This code enhances the given input image using Python Pillow library. It provides various filters like Color, Contrast, Brightness, and Sharpness.
+
+## Prerequisites
+Make sure you have the Pillow library installed. If not, you can install it using pip.
+
+
+pip install pillow
+
+## Usage
+Import the required libraries.
+
+from PIL import Image,ImageFilter
+from PIL import ImageEnhance
+Load the input image.
+
+im = Image.open('img.jpg')
+Choose the filter you want to apply. You can select only one filter at a time.
+
+#Choose your filter
+#add Hastag at start if you don't want to use any filter below
+en = ImageEnhance.Color(im)
+en = ImageEnhance.Contrast(im)
+en = ImageEnhance.Brightness(im)
+en = ImageEnhance.Sharpness(im)
+Apply the filter and display the result.
+
+en.enhance(1.5).show("enhanced")
+You can adjust the parameter (1.5 in this example) for each filter to control the intensity of the effect.
+
+Note: You can comment out the filters you don't want to use by adding a '#' at the start of the line.
+
+## Example
+
+ pip install pillow
+from PIL import Image,ImageFilter
+from PIL import ImageEnhance
+ 
+im = Image.open('img.jpg')
+ 
+ Choose your filter
+ add Hastag at start if you don't want to any filter below
+en = ImageEnhance.Color(im)
+en = ImageEnhance.Contrast(im)
+en = ImageEnhance.Brightness(im)
+en = ImageEnhance.Sharpness(im)# result
+en.enhance(1.5).show("enhanced")
+
+## Outputs
+The code will display the output image after applying the selected filter.
+
+Note: The name of the output image will be the same as the input image, so make sure to rename the input image if you want to keep a copy of the original image.

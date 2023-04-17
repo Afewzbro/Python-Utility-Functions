@@ -1,0 +1,32 @@
+# Cartoonize Image using OpenCV
+This Python code uses OpenCV library to convert an image into a cartoon-like image.
+
+## Prerequisites
+To use this code, you need to have the following libraries installed:
+
+OpenCV
+numpy
+You can install them using the following commands:
+
+
+pip install opencv-python
+pip install numpy
+## Input Image
+To cartoonize an image, you need to provide the path of the input image. In this code, the input image is img.jpg.
+
+## Code Logic
+1. Load the input image using cv2.imread() function.
+2. Convert the image to grayscale using cv2.cvtColor() function.
+3. Apply median blur to the grayscale image using cv2.medianBlur() function.
+4. Apply Laplacian edge detection to the blurred image using cv2.Laplacian() function.
+5. Threshold the edges using cv2.threshold() function to create a binary image.
+6. Apply the binary image as a mask to the original image using cv2.bitwise_and() function.
+7. Apply median blur to the resulting image using cv2.medianBlur() function.
+8. Save the final cartoonized image as cartooned.jpg using cv2.imwrite() function.
+## Output Image
+The output image will be saved as cartooned.jpg in the same directory where the code is located.
+
+## Usage
+To use the code, you can copy and paste it into your Python editor or IDE and run it. Make sure that the input image is in the same directory where the code is located. You can also modify the code to read the input image from a different directory.
+
+Note: This code can be used for non-commercial purposes only.

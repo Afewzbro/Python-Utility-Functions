@@ -1,0 +1,25 @@
+# Birthday Reminder
+This Python script will check if today is the birthday of anyone in a pre-defined list. If it is, it will print a message to the console to remind you of the birthday and their age.
+
+## Requirements
+Python 3.x
+No external libraries required
+## Usage
+Open a terminal/console window.
+Navigate to the directory where the script is located.
+Run the script by typing 
+python birthday_reminder.py.
+If you want to add a new birthday to the log, type 'y' when prompted and provide the birthday date in the format 'yyyy-mm-dd' and the person's name.
+The script will output a message if today is someone's birthday, including their name and age.
+## Configuration
+The script uses a pre-defined list called bday_log, which contains tuples of the form (name, (year, month, day)). You can edit this list to add or remove birthdays. Make sure to follow the same format when adding new entries.
+
+### Example
+
+$ python birthday_reminder.py
+To add birthday type y: y
+Add birthday in format yyyy-mm-dd: 1996-11-22
+Whose bday? John
+ It's John's 27th Birthday
+
+
